@@ -9346,6 +9346,9 @@ nav {
 }
 
 @media (max-width: 570px) and (orientation: landscape) {
+  #mainTittle {
+    font-size: 2.5rem;
+  }
   #mask {
     background-image: url("../bck/X_small_top_mask.svg");
   }

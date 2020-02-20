@@ -333,10 +333,16 @@ nav
 
 //LANDSCAPE
 @media (max-width: 570px) and (orientation: landscape){ 
-
-    //THREE ICONS SECTION    
+  
+    #mainTittle
+    {
+        font-size: 2.5rem;
+    }
+  
+    //THREE ICONS SECTION  
     #mask
     {
+
         background-image: url('../bck/X_small_top_mask.svg');
     }
     #threeIconMainContainer
