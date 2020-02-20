@@ -1,0 +1,442 @@
+//BOOTSTRAP CUSTOM
+
+$theme-colors:
+(
+    'primary': #B8C3AE,
+    'secondary': #0A1920,
+    'success': #234F59,
+    'info': #4F868C
+);
+@import '../bootstrap-4.0.0/scss/bootstrap.scss';
+
+.relative
+{
+    position: relative;
+}
+html
+{
+    font-size: 9px;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0A1920;
+    
+    section
+    {
+        width: 100%;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+}
+//HERO SECTION
+#heroSection
+{
+    height: 100vh;
+    background-image: url('../bck/Photo\ by\ Daniel\ Leone\ on\ Unsplash_small.png');
+    background-attachment: fixed;
+}
+#logo
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 5rem;
+}
+#social
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+.socialIcon
+{
+    height: 1.9rem;
+}
+.line
+{
+    position: absolute;
+    transition: 0.3s;
+}
+#topLine
+{   
+    --rotZ: 45deg;
+    transform: translateY(-1vh);
+}
+#botLine
+{
+    --rotZ: -45deg;
+    transform: translateY(1vh);
+}
+nav
+{
+    z-index: 1000;
+}
+#mainTriangle
+{
+    animation: slideDown 2s infinite;
+    cursor: pointer;
+    z-index: 10000;
+}
+//THREE ICON SECTION  
+#threeIconsSection
+{
+    background-image: url('../bck/main_mask.svg');
+    height: 100vh;
+}
+#mask
+{
+    position: absolute;
+    background-image: url('../bck/small_top_mask.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 50vw;
+    width: 100%;
+    top: -50vw;
+}
+.infoIcons
+{
+    height: 12rem;
+    animation: flash 2s infinite;
+}
+#goUP
+{
+    position: fixed;
+    bottom: 4.05vh;
+    right: 4vh;
+    z-index: 999999;
+    display: none;
+    &:hover
+    {
+        animation: sizeUP 0.2s forwards;
+    }
+    img
+    {
+        height: 2.2rem;
+    }
+}
+//TRIANGLE SECTION
+#trianglesSection
+{
+    background-image: url('../bck/main_mask_reverse.svg');
+}
+.trianglesIMG
+{
+    height: 17rem;
+    opacity: 0.7;
+}
+#midTriangle
+{
+    margin: -4rem 0rem;
+}
+//BELT SECTION
+#beltSection
+{
+    height: 100vh;
+}
+.circle
+{
+    position: absolute;
+    height: 1.7rem;
+    width: 1.7rem;
+}
+#circle1
+{
+    bottom: 37%;
+    right: 24%;
+}
+#circle2
+{
+    bottom: 15%;
+    right: 55%;
+}
+#circle3
+{
+    bottom: 35%;
+    right: 70%;
+}
+.beltText
+{
+    margin: 6rem 0rem;
+}
+//GALLERY SECTION
+#gallerySection
+{
+    background-image: url('../bck/bottom_mask.svg');
+    background-size: 100% 100%;
+    position: center;
+}
+.galleryArrows
+{
+    height: 2.3vh;
+    cursor: pointer;
+    &:hover
+    {
+        animation: sizeUP 0.2s forwards;
+    }
+}
+.galleryPhotos
+{
+    filter: grayscale(100%);
+    cursor: pointer;
+    &:hover
+        {
+            filter: grayscale(20%);
+        }
+}
+#imagePreviewLG
+{
+    height: 100%;
+    width: 100%;
+}
+//CONTACT SECTION
+#contactSection
+{
+    background-image: url('../bck/contact_mask.svg');
+}
+#footer
+{
+    height: 6vh;
+}
+#closeIcon
+{
+    color: #4F868C;
+}
+//large phones
+@media (min-width: 374px) {
+    //THREE ICONS SECTION
+    .infoIcons
+    {
+        height: 17rem;
+    }
+    //TRIANGLES SECTION
+    .trianglesIMG
+    {
+        height: 20rem;
+        filter: grayscale(100%);
+        &:hover
+        {
+            filter: grayscale(20%);
+        }
+    }
+    //BELT SECTION
+    .beltText
+    {
+        font-size: 1.2rem;
+        margin: 6rem 0rem;
+    }
+    #beltSection
+    {
+        .card
+        {
+            margin: 2.5rem 0rem !important;
+        }
+    }
+ }
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    
+    html
+    {
+        font-size: 12px;
+    }
+    //HERO SECTION
+    #heroSection
+    {
+        background-image: url('../bck/Photo\ by\ Daniel\ Leone\ on\ Unsplash.png');
+    }
+    .socialIcon
+    {
+        height: 1.5rem;
+        &:hover
+        {
+            animation: sizeUP 0.2s forwards;
+        }
+    }
+    //THREE SECTION
+    #mask
+    {
+        background-image: url('../bck/medium_top_mask.svg'); 
+    }
+    .infoIcons
+    {
+        height: 10rem;
+        margin-right: 2rem;
+    }
+    #threeIconsSection p
+    {
+        font-size: 0.95rem;
+    }
+    //BELT SECTION
+    #beltIMG
+    {
+        height: 17rem;
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  
+    //THREE ICONS SECTION
+    .infoIcons
+    {
+        height: 8.5rem;
+    }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+    html
+    {
+        font-size: 14px;
+    }
+    //THREE ICONS SECTION
+    #mask
+    {
+        background-image: url('../bck/large_top_mask.svg'); 
+    }
+    .infoIcons
+    {
+        height: 7rem;
+    }
+    .infoText
+    {
+        p
+        {
+            font-size: 0.9rem;
+        }
+    }
+    //TRIANGLES SECTION
+    #triangleIMGContainer
+    {
+        flex-direction: row !important;
+    }
+    #midTriangle
+    {
+        margin: 0rem -6rem;
+    }
+ }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    html
+    {
+        font-size: 16px;
+    }
+ }
+
+//LANDSCAPE
+@media (max-width: 570px) and (orientation: landscape){ 
+
+    //THREE ICONS SECTION    
+    #mask
+    {
+        background-image: url('../bck/X_small_top_mask.svg');
+    }
+    #threeIconMainContainer
+    {
+        display: flex;  
+        flex-direction: row !important;
+    }
+    .infoIcons
+    {
+        height: 11rem !important;
+    } 
+}
+@media (min-width: 571px) and (orientation: landscape){ 
+
+        //THREE ICONS SECTION 
+        .infoIcons
+        {
+            height: 7rem !important;
+        }
+        .infoText
+        {
+            p
+            {
+                font-size: 0.85rem !important;
+            }
+        }
+}
+@media (max-width: 801px) and (orientation: landscape){
+    //TRIANGLE SECTION
+    #triangleIMGContainer
+    {
+        flex-direction: row !important;
+    }
+    .trianglesIMG
+    {
+        height: 14rem !important;
+    }
+    #midTriangle
+    {
+        margin:  0rem -4rem;
+    }
+    //BELT SECTION
+    #beltIMG,#circle1,#circle2,#circle3
+    {
+        display: none;
+    }
+    .beltText
+    {
+        margin: 0.5rem !important;
+        font-size: 1rem !important;
+    }
+   
+}
+
+//KEYFRAMES
+@keyframes slideDown
+{
+    0%
+    {
+        transform: translateY(0vh);
+        opacity: 0;
+    }
+    40%
+    {
+        
+        opacity: 1;
+    }
+    80%
+    {
+        transform: translateY(4vh);
+    }
+    100%
+    {
+        transform: translateY(0vh);
+        opacity: 0;
+    }
+}
+@keyframes sizeUP
+{
+    from
+    {
+        transform: scale(1);
+    }
+    to
+    {
+        transform: scale(1.3);
+    }
+}
+@keyframes flash
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.04);;
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
