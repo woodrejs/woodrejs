@@ -1,5 +1,4 @@
 //BOOTSTRAP CUSTOM
-
 $theme-colors:
 (
     'primary': #B8C3AE,
@@ -80,11 +79,14 @@ nav
 {
     z-index: 1000;
 }
+#triangleContainer{
+    z-index: 9999999;
+}
 #mainTriangle
 {
     animation: slideDown 2s infinite;
     cursor: pointer;
-    z-index: 10000;
+    z-index: 9999998;
 }
 //THREE ICON SECTION  
 #threeIconsSection
@@ -250,10 +252,6 @@ nav
         font-size: 12px;
     }
     //HERO SECTION
-    #heroSection
-    {
-        background-image: url('../bck/Photo\ by\ Daniel\ Leone\ on\ Unsplash.png');
-    }
     .socialIcon
     {
         height: 1.5rem;
@@ -284,7 +282,10 @@ nav
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {  
-    //THREE ICONS SECTION
+    #heroSection
+    {
+        background-image: url('../bck/Photo\ by\ Daniel\ Leone\ on\ Unsplash.png');
+    }
     .infoIcons
     {
         height: 8.5rem;

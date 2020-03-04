@@ -9126,11 +9126,15 @@ nav {
   z-index: 1000;
 }
 
+#triangleContainer {
+  z-index: 9999999;
+}
+
 #mainTriangle {
   -webkit-animation: slideDown 2s infinite;
           animation: slideDown 2s infinite;
   cursor: pointer;
-  z-index: 10000;
+  z-index: 9999998;
 }
 
 #threeIconsSection {
@@ -9284,9 +9288,6 @@ nav {
   html {
     font-size: 12px;
   }
-  #heroSection {
-    background-image: url("../bck/Photo by Daniel Leone on Unsplash.png");
-  }
   .socialIcon {
     height: 1.5rem;
   }
@@ -9310,6 +9311,9 @@ nav {
 }
 
 @media (min-width: 768px) {
+  #heroSection {
+    background-image: url("../bck/Photo by Daniel Leone on Unsplash.png");
+  }
   .infoIcons {
     height: 8.5rem;
   }
