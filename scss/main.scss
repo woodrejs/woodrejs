@@ -169,6 +169,12 @@ nav
 .beltText
 {
     margin: 6rem 0rem;
+    h5{
+        font-size: 1.1rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
 }
 //GALLERY SECTION
 #gallerySection
@@ -297,6 +303,10 @@ nav
     html
     {
         font-size: 14px;
+    }
+    #descriptions{
+        display: flex;
+        flex-direction: row;
     }
     //THREE ICONS SECTION
     #mask
