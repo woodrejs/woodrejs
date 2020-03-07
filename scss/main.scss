@@ -39,7 +39,8 @@ body
 #heroSection
 {
     height: 100vh;
-    background-image: url('../bck/Photo\ by\ Daniel\ Leone\ on\ Unsplash_small.png');
+    background-image: url('../bck/hero/Photo\ by\ Daniel\ Leone\ on\ Unsplash414x736.png');
+    background-position: 100% 100%;
     background-attachment: fixed;
 }
 #logo
@@ -221,6 +222,7 @@ nav
 }
 //large phones
 @media (min-width: 374px) {
+
     //THREE ICONS SECTION
     .infoIcons
     {
@@ -252,7 +254,10 @@ nav
  }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
-    
+    #heroSection
+    {
+        background-image: url('../bck/hero/Photo\ by\ Daniel\ Leone\ on\ Unsplash768x1024.png');
+    }
     html
     {
         font-size: 12px;
@@ -288,10 +293,7 @@ nav
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {  
-    #heroSection
-    {
-        background-image: url('../bck/Photo\ by\ Daniel\ Leone\ on\ Unsplash.png');
-    }
+    
     .infoIcons
     {
         height: 8.5rem;
@@ -299,7 +301,10 @@ nav
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
-
+    #heroSection
+    {
+        background-image: url('../bck/hero/Photo\ by\ Daniel\ Leone\ on\ Unsplash1920x1080.png');
+    }
     html
     {
         font-size: 14px;
@@ -341,7 +346,6 @@ nav
         font-size: 16px;
     }
  }
-
 //LANDSCAPE
 @media (max-width: 570px) and (orientation: landscape){ 
   
@@ -406,6 +410,24 @@ nav
         font-size: 1rem !important;
     }
    
+}
+@media (min-width: 480px) and (orientation: landscape){
+    #heroSection
+    {
+        background-image: url('../bck/hero/Photo\ by\ Daniel\ Leone\ on\ Unsplash736x414.png');
+    }
+}
+@media (min-width: 737px) and (orientation: landscape){
+    #heroSection
+    {
+        background-image: url('../bck/hero/Photo\ by\ Daniel\ Leone\ on\ Unsplash1024x768.png');
+    }
+}
+@media (min-width: 1025px) and (orientation: landscape){
+    #heroSection
+    {
+        background-image: url('../bck/hero/Photo\ by\ Daniel\ Leone\ on\ Unsplash1920x1080.png');
+    }
 }
 
 //KEYFRAMES

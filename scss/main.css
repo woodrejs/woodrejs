@@ -9082,7 +9082,8 @@ body section {
 
 #heroSection {
   height: 100vh;
-  background-image: url("../bck/Photo by Daniel Leone on Unsplash_small.png");
+  background-image: url("../bck/hero/Photo by Daniel Leone on Unsplash414x736.png");
+  background-position: 100% 100%;
   background-attachment: fixed;
 }
 
@@ -9293,6 +9294,9 @@ nav {
 }
 
 @media (min-width: 576px) {
+  #heroSection {
+    background-image: url("../bck/hero/Photo by Daniel Leone on Unsplash768x1024.png");
+  }
   html {
     font-size: 12px;
   }
@@ -9319,15 +9323,15 @@ nav {
 }
 
 @media (min-width: 768px) {
-  #heroSection {
-    background-image: url("../bck/Photo by Daniel Leone on Unsplash.png");
-  }
   .infoIcons {
     height: 8.5rem;
   }
 }
 
 @media (min-width: 992px) {
+  #heroSection {
+    background-image: url("../bck/hero/Photo by Daniel Leone on Unsplash1920x1080.png");
+  }
   html {
     font-size: 14px;
   }
@@ -9415,6 +9419,24 @@ nav {
   .beltText {
     margin: 0.5rem !important;
     font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 480px) and (orientation: landscape) {
+  #heroSection {
+    background-image: url("../bck/hero/Photo by Daniel Leone on Unsplash736x414.png");
+  }
+}
+
+@media (min-width: 737px) and (orientation: landscape) {
+  #heroSection {
+    background-image: url("../bck/hero/Photo by Daniel Leone on Unsplash1024x768.png");
+  }
+}
+
+@media (min-width: 1025px) and (orientation: landscape) {
+  #heroSection {
+    background-image: url("../bck/hero/Photo by Daniel Leone on Unsplash1920x1080.png");
   }
 }
 
